@@ -49,7 +49,7 @@ SmartInt SmartInt::operator*(SmartInt other) throw (char*)
 SmartInt SmartInt::operator/(SmartInt other) throw (char*)
 {
 	long long newValue = (long long)_value / (long long)other._value;
-	SmartInt result = tryConvertFrom(newValue);
+	SmartInt result(newValue);
 	return result;
 }
 

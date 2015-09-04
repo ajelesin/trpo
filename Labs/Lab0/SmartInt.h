@@ -22,5 +22,5 @@ private:
 	int _value;
 
 private:
-	SmartInt tryConvertFrom(long long);
+	static SmartInt tryConvertFrom(long long);
 };

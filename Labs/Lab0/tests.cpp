@@ -84,10 +84,66 @@ void testNegativeNumbersAddition()
 	SmartInt expectedValue(-90);
 	SmartInt realValue = v1 + v2;
 
-	assertEquals(realValue, expectedValue, "Negative numbers addition test failed!");
+	assertEquals<SmartInt>(realValue, expectedValue, "Negative numbers addition test failed!");
 }
 
+void testSubstraction()
+{
+	SmartInt v1(0), v2(10);
 
+	SmartInt expectedValue(-10);
+	SmartInt realValue = v1 - v2;
+
+	assertEquals<SmartInt>(realValue, expectedValue, "Substraction test failed!");
+}
+
+void testBigNumbersSubstraction()
+{
+	try
+	{
+		SmartInt v1(0x80000001), v2(80000001);
+		SmartInt realValue = v1 - v2;
+
+		fail("Big numbers substraction test failed!");
+	}
+	catch (...)
+	{
+	}
+}
+
+void testMultiplication()
+{
+	SmartInt v1(10), v2(-10);
+
+	SmartInt expectedValue(-100);
+	SmartInt realValue = v1 * v2;
+
+	assertEquals<SmartInt>(realValue, expectedValue, "Multiplication test failed!");
+}
+
+void testBigNumbersMultiplication()
+{
+	try
+	{
+		SmartInt v1(0x80000001), v2(80000001);
+		SmartInt realValue = v1 * v2;
+
+		fail("Big numbers multiplication test failed!");
+	}
+	catch (...)
+	{
+	}
+}
+
+void testDivision()
+{
+	SmartInt v1(15), v2(6);
+
+	SmartInt expectedValue(2);
+	SmartInt realValue = v1 / v2;
+
+	assertEquals<SmartInt>(realValue, expectedValue, "Division test failed!");
+}
 
 void main()
 {
@@ -97,5 +153,10 @@ void main()
 	testAddition();
 	testBigNumbersAddition();
 	testNegativeNumbersAddition();
+	testSubstraction();
+	testBigNumbersSubstraction();
+	testMultiplication();
+	testBigNumbersMultiplication();
+	testDivision();
 	getchar();
 }
