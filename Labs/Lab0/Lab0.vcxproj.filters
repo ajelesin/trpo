@@ -13,18 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\SmartInt">
+      <UniqueIdentifier>{d1ad310d-5684-40ce-bb67-60f7c2b8cfea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{28cb9711-b55e-43fa-b3c5-3653341de4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SmartInt">
+      <UniqueIdentifier>{56c9862f-4828-49ad-928b-aa049e892e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SmartArray">
+      <UniqueIdentifier>{b55986d5-64e1-405a-815f-f64c413cbe82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SmartArray">
+      <UniqueIdentifier>{215bbcf7-d6f2-47e8-bf0e-4a603fa1867a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tests.cpp">
+    <ClCompile Include="program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TestSmartInt.h">
+      <Filter>Header Files\SmartInt</Filter>
+    </ClCompile>
     <ClCompile Include="SmartInt.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\SmartInt</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSmartInt.cpp">
+      <Filter>Source Files\SmartInt</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexArrayOutOfBoundsException.cpp">
+      <Filter>Source Files\SmartArray</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationException.cpp">
+      <Filter>Source Files\SmartInt</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartArray.cpp">
+      <Filter>Source Files\SmartArray</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSmartArray.cpp">
+      <Filter>Source Files\SmartArray</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SmartInt.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\SmartInt</Filter>
+    </ClInclude>
+    <ClInclude Include="TestUtil.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexArrayOutOfBoundException.h">
+      <Filter>Header Files\SmartArray</Filter>
+    </ClInclude>
+    <ClInclude Include="OperationException.h">
+      <Filter>Header Files\SmartInt</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartArray.h">
+      <Filter>Header Files\SmartArray</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSmartArray.h">
+      <Filter>Header Files\SmartArray</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

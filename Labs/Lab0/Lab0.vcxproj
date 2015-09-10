@@ -64,11 +64,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SmartArray.cpp" />
+    <ClCompile Include="IndexArrayOutOfBoundsException.cpp" />
+    <ClCompile Include="OperationException.cpp" />
+    <ClCompile Include="program.cpp" />
     <ClCompile Include="SmartInt.cpp" />
-    <ClCompile Include="tests.cpp" />
+    <ClCompile Include="TestSmartArray.cpp" />
+    <ClCompile Include="TestSmartInt.cpp" />
+    <ClCompile Include="TestSmartInt.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="SmartArray.h" />
+    <ClInclude Include="IndexArrayOutOfBoundException.h" />
+    <ClInclude Include="OperationException.h" />
     <ClInclude Include="SmartInt.h" />
+    <ClInclude Include="TestSmartArray.h" />
+    <ClInclude Include="TestUtil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
