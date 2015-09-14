@@ -1,12 +1,13 @@
 #include "TestSmartInt.h"
 #include "TestSmartInt.cpp"
-#include "TestSmartArray.h"
-//#include "TestSmartArray.cpp"
+#include "TestArray.h"
+#include "TestArray2D.h"
 
 int main()
 {
 	TestSmartInt::runTest();
-	TestSmartArray::runTest();
+	TestArray::runTest();
+	TestArray2D::runTest();
 	getchar();
 	return 0;
 }

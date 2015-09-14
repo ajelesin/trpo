@@ -25,7 +25,7 @@ int SmartInt::toInt()
 	return _value;
 }
 
-SmartInt SmartInt::operator+(SmartInt other) throw (OperationException)
+SmartInt SmartInt::operator+(SmartInt other) throw (Exception)
 {
 	try	{
 		long long newValue = (long long)_value + (long long)other._value;
@@ -33,11 +33,11 @@ SmartInt SmartInt::operator+(SmartInt other) throw (OperationException)
 		return result;
 	}
 	catch (...){
-		throw new OperationException("addition", _value, other._value);
+		throw new Exception("Addition operation exception");
 	}
 }
 
-SmartInt SmartInt::operator-(SmartInt other) throw (OperationException)
+SmartInt SmartInt::operator-(SmartInt other) throw (Exception)
 {
 	try{
 		long long newValue = (long long)_value - (long long)other._value;
@@ -45,11 +45,11 @@ SmartInt SmartInt::operator-(SmartInt other) throw (OperationException)
 		return result;
 	}
 	catch (...){
-		throw new OperationException("subtraction", _value, other._value);
+		throw new Exception("Substraction operation exception");
 	}
 }
 
-SmartInt SmartInt::operator*(SmartInt other) throw (OperationException)
+SmartInt SmartInt::operator*(SmartInt other) throw (Exception)
 {
 	try {
 		long long newValue = (long long)_value * (long long)other._value;
@@ -57,11 +57,11 @@ SmartInt SmartInt::operator*(SmartInt other) throw (OperationException)
 		return result;
 	}
 	catch (...){
-		throw new OperationException("multiplication", _value, other._value);
+		throw new Exception("Multiplication operation exception");
 	}
 }
 
-SmartInt SmartInt::operator/(SmartInt other) throw (OperationException)
+SmartInt SmartInt::operator/(SmartInt other) throw (Exception)
 {
 	try {
 		long long newValue = (long long)_value / (long long)other._value;
@@ -69,11 +69,11 @@ SmartInt SmartInt::operator/(SmartInt other) throw (OperationException)
 		return result;
 	}
 	catch (...){
-		throw new OperationException("division", _value, other._value);
+		throw new Exception("Division operation exception");
 	}
 }
 
-SmartInt SmartInt::operator-() throw (OperationException)
+SmartInt SmartInt::operator-() throw (Exception)
 {
 	try {
 		long long newValue = -((long long)_value);
@@ -81,7 +81,7 @@ SmartInt SmartInt::operator-() throw (OperationException)
 		return result;
 	}
 	catch (...){
-		throw new OperationException("inversion", 0, _value);
+		throw new Exception("Inversion operation exception");
 	}
 }
 

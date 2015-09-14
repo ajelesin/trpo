@@ -64,21 +64,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SmartArray.cpp" />
-    <ClCompile Include="IndexArrayOutOfBoundsException.cpp" />
-    <ClCompile Include="OperationException.cpp" />
+    <ClCompile Include="Array2D.cpp" />
+    <ClCompile Include="Array2D.h" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Array.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="SmartInt.cpp" />
-    <ClCompile Include="TestSmartArray.cpp" />
+    <ClCompile Include="TestArray2D.cpp" />
+    <ClCompile Include="TestArray.cpp" />
     <ClCompile Include="TestSmartInt.cpp" />
     <ClCompile Include="TestSmartInt.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SmartArray.h" />
-    <ClInclude Include="IndexArrayOutOfBoundException.h" />
-    <ClInclude Include="OperationException.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Array.h" />
     <ClInclude Include="SmartInt.h" />
-    <ClInclude Include="TestSmartArray.h" />
+    <ClInclude Include="TestArray2D.h" />
+    <ClInclude Include="TestArray.h" />
     <ClInclude Include="TestUtil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

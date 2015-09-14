@@ -1,6 +1,6 @@
 #pragma once
 
-class TestSmartArray
+class TestArray
 {
 private:
 	static void testEquality();
@@ -8,6 +8,7 @@ private:
 	static void testInequalityByLength();
 	static void testAddition();
 	static void testAccessByIndex();
+	static void testChangeArrayLength();
 
 public:
 	static void runTest();

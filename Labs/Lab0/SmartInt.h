@@ -1,5 +1,5 @@
 #pragma once
-#include "OperationException.h"
+#include "Exception.h"
 
 class SmartInt
 {
@@ -10,11 +10,11 @@ public:
 	~SmartInt();
 
 	int toInt();
-	SmartInt operator+(SmartInt) throw (OperationException);
-	SmartInt operator-(SmartInt) throw (OperationException);
-	SmartInt operator*(SmartInt) throw (OperationException);
-	SmartInt operator/(SmartInt) throw (OperationException);
-	SmartInt operator-() throw (OperationException);
+	SmartInt operator+(SmartInt) throw (Exception);
+	SmartInt operator-(SmartInt) throw (Exception);
+	SmartInt operator*(SmartInt) throw (Exception);
+	SmartInt operator/(SmartInt) throw (Exception);
+	SmartInt operator-() throw (Exception);
 	SmartInt operator=(SmartInt);
 	bool operator==(SmartInt);
 	bool operator!=(SmartInt);

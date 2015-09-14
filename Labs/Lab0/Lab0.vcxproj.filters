@@ -16,17 +16,29 @@
     <Filter Include="Header Files\SmartInt">
       <UniqueIdentifier>{d1ad310d-5684-40ce-bb67-60f7c2b8cfea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Common">
-      <UniqueIdentifier>{28cb9711-b55e-43fa-b3c5-3653341de4ad}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\SmartInt">
       <UniqueIdentifier>{56c9862f-4828-49ad-928b-aa049e892e8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\SmartArray">
+    <Filter Include="Header Files\TestUtil">
+      <UniqueIdentifier>{28cb9711-b55e-43fa-b3c5-3653341de4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{e6767648-7f6c-45ad-a20f-2d37d3617830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{bdb16073-b693-4c34-a7af-38cb9740ed48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Array">
+      <UniqueIdentifier>{215bbcf7-d6f2-47e8-bf0e-4a603fa1867a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Array">
       <UniqueIdentifier>{b55986d5-64e1-405a-815f-f64c413cbe82}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\SmartArray">
-      <UniqueIdentifier>{215bbcf7-d6f2-47e8-bf0e-4a603fa1867a}</UniqueIdentifier>
+    <Filter Include="Header Files\Array2D">
+      <UniqueIdentifier>{de538f69-0b13-4254-b4b0-eb9840b7f35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Array2D">
+      <UniqueIdentifier>{eab93d05-8dbe-4549-838a-3ad4235d3019}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -42,17 +54,23 @@
     <ClCompile Include="TestSmartInt.cpp">
       <Filter>Source Files\SmartInt</Filter>
     </ClCompile>
-    <ClCompile Include="IndexArrayOutOfBoundsException.cpp">
-      <Filter>Source Files\SmartArray</Filter>
+    <ClCompile Include="TestArray2D.cpp">
+      <Filter>Source Files\Array2D</Filter>
     </ClCompile>
-    <ClCompile Include="OperationException.cpp">
-      <Filter>Source Files\SmartInt</Filter>
+    <ClCompile Include="Array2D.h">
+      <Filter>Header Files\Array2D</Filter>
     </ClCompile>
-    <ClCompile Include="SmartArray.cpp">
-      <Filter>Source Files\SmartArray</Filter>
+    <ClCompile Include="Array.cpp">
+      <Filter>Source Files\Array</Filter>
     </ClCompile>
-    <ClCompile Include="TestSmartArray.cpp">
-      <Filter>Source Files\SmartArray</Filter>
+    <ClCompile Include="TestArray.cpp">
+      <Filter>Source Files\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="Array2D.cpp">
+      <Filter>Source Files\Array2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Source Files\Exceptions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,19 +78,19 @@
       <Filter>Header Files\SmartInt</Filter>
     </ClInclude>
     <ClInclude Include="TestUtil.h">
-      <Filter>Header Files\Common</Filter>
+      <Filter>Header Files\TestUtil</Filter>
     </ClInclude>
-    <ClInclude Include="IndexArrayOutOfBoundException.h">
-      <Filter>Header Files\SmartArray</Filter>
+    <ClInclude Include="TestArray2D.h">
+      <Filter>Header Files\Array2D</Filter>
     </ClInclude>
-    <ClInclude Include="OperationException.h">
-      <Filter>Header Files\SmartInt</Filter>
+    <ClInclude Include="Array.h">
+      <Filter>Header Files\Array</Filter>
     </ClInclude>
-    <ClInclude Include="SmartArray.h">
-      <Filter>Header Files\SmartArray</Filter>
+    <ClInclude Include="TestArray.h">
+      <Filter>Header Files\Array</Filter>
     </ClInclude>
-    <ClInclude Include="TestSmartArray.h">
-      <Filter>Header Files\SmartArray</Filter>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files\Exceptions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
