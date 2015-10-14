@@ -18,9 +18,9 @@ public:
 	int rank();
 	void setLength(int, int) throw (Exception);
 
-	Array2D<T> operator=(Array2D<T>);
-	bool operator==(Array2D<T>);
-	bool operator!=(Array2D<T>);
+	Array2D<T> operator=(const Array2D<T>&);
+	bool operator==(const Array2D<T>&);
+	bool operator!=(const Array2D<T>&);
 
 	static Array2D<T> asArray(T**, int, int);
 

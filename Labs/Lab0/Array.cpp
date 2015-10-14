@@ -85,7 +85,7 @@ T& Array<T>::operator[](int index)
 }
 
 template <class T>
-Array<T> Array<T>::operator=(Array<T> other)
+Array<T> Array<T>::operator=(const Array<T>& other)
 {
 	delete[] _values;
 
@@ -99,7 +99,7 @@ Array<T> Array<T>::operator=(Array<T> other)
 }
 
 template <class T>
-Array<T> Array<T>::operator+(Array<T> other)
+Array<T> Array<T>::operator+(const Array<T>& other)
 {
 	int newLength = _length + other._length;
 	int* newValues = new int[newLength];
@@ -117,7 +117,7 @@ Array<T> Array<T>::operator+(Array<T> other)
 }
 
 template <class T>
-bool Array<T>::operator==(Array<T> other)
+bool Array<T>::operator==(const Array<T>& other)
 {
 	if (_length != other._length){
 		return false;
@@ -131,7 +131,7 @@ bool Array<T>::operator==(Array<T> other)
 }
 
 template <class T>
-bool Array<T>::operator!=(Array<T> other)
+bool Array<T>::operator!=(const Array<T>& other)
 {
 	return !(*this == other);
 }

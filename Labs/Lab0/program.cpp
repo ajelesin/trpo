@@ -5,7 +5,7 @@
 
 int main()
 {
-	TestSmartInt::runTest();
+	//TestSmartInt::runTest();
 	TestArray::runTest();
 	TestArray2D::runTest();
 	getchar();

@@ -38,7 +38,7 @@ void TestArray::testInequalityByLength()
 	int a2[2] = { 3 };
 
 	Array<int> s1 = Array<int>::asArray(a1, 2);
-	Array<int> s2 = Array<int>::asArray(a2, 2);
+	Array<int> s2 = Array<int>::asArray(a2, 1);
 
 	bool realValue = s1 != s2;
 	bool expectedValue = true;

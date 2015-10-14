@@ -104,7 +104,7 @@ void Array2D<T>::setLength(int newRank, int newLength)
 }
 
 template <class T>
-Array2D<T> Array2D<T>::operator=(Array2D<T> other)
+Array2D<T> Array2D<T>::operator=(const Array2D<T>& other)
 {
 	if (_values){
 		for (int i = 0; i < _rank; i++){
@@ -130,7 +130,7 @@ Array2D<T> Array2D<T>::operator=(Array2D<T> other)
 }
 
 template <class T>
-bool Array2D<T>::operator==(Array2D<T> other)
+bool Array2D<T>::operator==(const Array2D<T>& other)
 {
 	if (_rank != other._rank || _length != other._length)
 		return false;
@@ -146,7 +146,7 @@ bool Array2D<T>::operator==(Array2D<T> other)
 }
 
 template <class T>
-bool Array2D<T>::operator!=(Array2D<T> other)
+bool Array2D<T>::operator!=(const Array2D<T>& other)
 {
 	return !(*this == other);
 }

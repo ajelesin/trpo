@@ -17,10 +17,10 @@ public:
 	void setLength(int) throw (Exception);
 
 	T& operator[](int) throw (Exception);
-	Array<T> operator=(Array<T>);
-	Array<T> operator+(Array<T>);
-	bool operator==(Array<T>);
-	bool operator!=(Array<T>);
+	Array<T> operator=(const Array<T>&);
+	Array<T> operator+(const Array<T>&);
+	bool operator==(const Array<T>&);
+	bool operator!=(const Array<T>&);
 
 	static Array<T> asArray(T[], int);
 
